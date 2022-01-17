@@ -2,6 +2,7 @@
   "name": "worktimetracker",
   "version": "1.0.0",
   "description": "",
+  "type": "commonjs",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -21,7 +22,11 @@
   },
   "homepage": "https://github.com/jellebaele/WorkTimeTracker#readme",
   "dependencies": {
-    "express": "^4.17.2"
+    "cookie-session": "^2.0.0",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.7",
+    "passport": "^0.5.2",
+    "passport-google-oauth20": "^2.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

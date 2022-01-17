@@ -1,10 +1,7 @@
 const express = require('express');
+const loader = require('./loaders');
 
-const app = express();
-
-app.get('/test', (req, res) => {
-   res.send('Hello world!');
-});
+const app = loader.setupServer();
 
 if (process.env.NODE_ENV === 'production') {
    app.use(express.static('client/build'));
